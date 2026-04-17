@@ -1,0 +1,70 @@
+/* Admin Navbar */
+.admin-navbar {
+  background: #1e2329;
+  height: 60px;
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #2d3540;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.admin-navbar-inner {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.admin-brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: #e0e6ed;
+  letter-spacing: -0.3px;
+}
+
+.admin-tag {
+  color: #8898a9;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.admin-nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.admin-nav-links a {
+  color: #8898a9;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  transition: all 0.2s;
+  text-decoration: none;
+}
+
+.admin-nav-links a:hover,
+.admin-nav-links a.active {
+  color: #e0e6ed;
+  background: rgba(255,255,255,0.08);
+}
+
+.admin-logout-btn {
+  background: none;
+  border: none;
+  color: #8898a9;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 6px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: inherit;
+}
+.admin-logout-btn:hover { color: #f44336; background: rgba(244,67,54,0.08); }
