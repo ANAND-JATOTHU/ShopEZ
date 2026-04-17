@@ -4,3 +4,10 @@ dist/
 .DS_Store
 Client/node_modules/
 Server/node_modules/
+
+# Ignore Workspace artifacts
+.venv/
+input.md
+download.png
+download (1).png
+download (2).png
