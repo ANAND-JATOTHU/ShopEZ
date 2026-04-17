@@ -14,22 +14,22 @@ ShopEZ is a fully-featured, dynamically responsive MERN stack E-Commerce applica
 
 ## 📸 Screenshots
 
-*(Add your screenshots here by replacing the placeholder links!)*
+*(Ensure you have dragged your screenshot files into the ShopEZ root folder with the following exact names!)*
 
 1. **Homepage**
-   ![Homepage](./homepage-placeholder.png)
+   ![Homepage](./homepage.png)
 
 2. **Product Catalog & Details**
-   ![Products Page](./products-placeholder.png)
+   ![Products Page](./products.png)
 
-3. **User Profile & Order History**
-   ![User Profile](./profile-placeholder.png)
+3. **Admin Manage Products**
+   ![Admin Products](./admin-products.png)
 
-4. **Cart & Secure Checkout (Razorpay)**
-   ![Checkout Flow](./checkout-placeholder.png)
+4. **Cart & Secure Checkout (Razorpay/Stripe)**
+   ![Checkout Flow](./orders.png)
 
 5. **Admin Control Dashboard**
-   ![Admin Dashboard](./admin-dashboard-placeholder.png)
+   ![Admin Dashboard](./admin-dashboard.png)
 
 ---
 
