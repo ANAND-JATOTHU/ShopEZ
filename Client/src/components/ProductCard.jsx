@@ -18,10 +18,6 @@ const ProductCard = ({ product }) => {
       toast.error('Please login to add items to cart');
       return;
     }
-    if (user.userType === 'admin') {
-      toast.info('Admins cannot add to cart');
-      return;
-    }
     try {
       setAdding(true);
       const defaultSize = product.sizes && product.sizes.length > 0 ? product.sizes[0] : 'M';

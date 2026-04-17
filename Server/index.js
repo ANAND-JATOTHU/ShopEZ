@@ -9,24 +9,9 @@ dotenv.config();
 // Connect to MongoDB
 connectDB().then(async () => {
   const Product = require('./models/Product');
-  const User = require('./models/User');
   const axios = require('axios');
   
   try {
-    // 1. Seed Demo Admin User
-    const userCount = await User.countDocuments();
-    if (userCount === 0) {
-      console.log('Users collection is empty. Auto-seeding Demo Admin...');
-      await User.create({
-        username: 'Admin',
-        email: 'admin@shopez.com',
-        password: 'admin123',
-        userType: 'admin'
-      });
-      console.log('Demo Admin seeded successfully.');
-    }
-
-    // 2. Seed Fake Products
     const count = await Product.countDocuments();
     if (count === 0) {
       console.log('Database is empty. Auto-seeding fake products...');

@@ -1,84 +1,65 @@
-# ShopEZ - MERN E-Commerce Platform 🛒
+# ShopEZ - Modern Full-Stack E-Commerce Platform
 
-![Home Page UI](./download.png)
+ShopEZ is a fully-featured, dynamically responsive MERN stack E-Commerce application. It provides complete end-to-end purchasing flows, robust product cataloging, secure user authentication, dummy data seeding, and an exhaustive Admin Dashboard.
 
-ShopEZ is a fully-featured, production-ready E-commerce web application built entirely using the MERN stack (MongoDB, Express.js, React.js, Node.js). It provides a complete shopping flow from product browsing to secure checkout, alongside a powerful administrative dashboard to manage the platform.
+## 🚀 Features
 
-## 🚀 Key Features
-
-*   **Responsive Modern UI:** Designed with a stunning, dynamically responsive interface including glassmorphism aesthetics from the ground up natively in CSS.
-*   **Complete Shopping Flow:**
-    *   Dynamic Product Listings (Filterable categories, Sort by price/discount)
-    *   Individual Product Detail pages with Image Carousels
-    *   Shopping Cart (Size/Quantity manager)
-    *   Secure Checkout Flow
-*   **Role-Based Security (JWT):** Separate User and Admin roles. Admin views are securely protected by backend middleware.
-*   **Razorpay Integration:** Full payment gateway integration in test mode.
-*   **Admin Dashboard:**
-    *   Automatically seed store with Dummy Data at the click of a button!
-    *   Monitor application statistics (Users, Orders, Total Reveune)
-    *   Full CRUD operation suite for managing Product listings dynamically
-    *   Manage active orders and change fulfillment statuses
-
-### Application Views
-*Admin Web Dashboard Flow (Products, Orders, Dashboard, etc.)*
-![Admin Dashboard](./download%20(1).png)
-
-*The Shopping Process Flow*
-![Shopping Process](./download%20(2).png)
+- **Storefront & Catalog:** Browse products dynamically parsed into categories (Fashion, Electronics, Mobiles), with support for search, sorting, and rich image carousels.
+- **Cart & Checkout Flow:** Interactive shopping cart with persistent real-time total calculation. Fully integrated with Razorpay (Test Mode) SDK for credit/debit card mockup payments.
+- **Role-Based Authentication:** Secure JWT-based architecture. Includes encrypted user login/registration and distinct environments for regular `users` vs `admin`.
+- **In-Memory Database Fallback:** Fails over to `mongodb-memory-server` ensuring 100% crash-free portability whether MongoDB is installed or not.
+- **Admin Dashboard:** Total site control. Monitor active users, edit/delete orders, perform full CRUD operations on all products, and automatically Seed the database via external FakeStore API integration.
 
 ---
 
-## 🛠 Tech Stack 
+## 📸 Screenshots
 
-**Client (Frontend)**
-*   React.js over Vite (`npx create-vite`)
-*   React Router DOM (for secure Client-Side Routing)
-*   React Context API (for global `Auth` and `Cart` State Management)
-*   Vanilla CSS (Custom extensive aesthetic UI libraries)
-*   Axios (with dynamic Interceptors for JWT attach)
-*   React Toastify (Global User Notifications)
-*   Razorpay SDK
+*(Add your screenshots here by replacing the placeholder links!)*
 
-**Server (Backend)**
-*   Node.js & Express.js architecture
-*   MongoDB & Mongoose
-*   MongoDB Memory Server (Auto-Fallback for local testing without installation!)
-*   JWT `jsonwebtoken` for Stateless Authentication
-*   Bcrypt.js for secure Password Hashing
-*   Razorpay SDK (for order signature generation)
+1. **Homepage**
+   ![Homepage](./homepage-placeholder.png)
 
----
+2. **Product Catalog & Details**
+   ![Products Page](./products-placeholder.png)
 
-## ⚙️ How to Run Locally
+3. **User Profile & Order History**
+   ![User Profile](./profile-placeholder.png)
 
-Because ShopEZ natively features a **Smart Database Fallback**, you do not need to install MongoDB for the project to work! 
+4. **Cart & Secure Checkout (Razorpay)**
+   ![Checkout Flow](./checkout-placeholder.png)
 
-1. **Install Dependencies:**
-   ```bash
-   cd Server && npm install
-   cd ../Client && npm install
-   ```
-
-2. **Start the Express API:**
-   ```bash
-   cd Server
-   npm run dev
-   ```
-   *(If you don't have MongoDB installed locally, the server will intelligently spin up an in-memory database and auto-seed an `Admin` user for you!).*
-
-3. **Start the Frontend UI:**
-   ```bash
-   cd Client
-   npm run dev
-   ```
-
-4. Go to `http://localhost:5174/` or `http://localhost:5173/` in your browser.
+5. **Admin Control Dashboard**
+   ![Admin Dashboard](./admin-dashboard-placeholder.png)
 
 ---
 
-### Demo Credentials
-To explore the Admin portal, log in straight away using the auto-seeded credentials:
-*   **Email:** `admin@shopez.com`
-*   **Password:** `admin123`
-*(Note: If you are using the in-memory fallback database, the store will dynamically seed this user specifically on boot).*
+## 💻 Tech Stack
+- **Frontend**: React.js, Vite, Axios, React Router, Context API, Vanilla CSS.
+- **Backend**: Node.js, Express.js.
+- **Database**: MongoDB (Mongoose), `mongodb-memory-server` fallback.
+- **Security**: JWT (JSON Web Tokens), `bcryptjs`.
+- **Payment Gateway**: Razorpay Integration.
+
+## 🔧 Installation & Setup
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/ANAND-JATOTHU/ShopEZ.git
+   ```
+2. **Install Server Dependencies**
+   ```bash
+   cd ShopEZ/Server
+   npm install
+   ```
+3. **Install Client Dependencies**
+   ```bash
+   cd ../Client
+   npm install
+   ```
+4. **Boot Both Servers**
+   - Head to `Server/` and run `npm run dev`
+   - Head to `Client/` and run `npm run dev`
+5. **Access the App**
+   Open `http://localhost:5174/` or `http://localhost:5173/` in your browser.
+
+> Note: To access the Admin panel, login using `admin@shopez.com` (password: `admin123`). The store will automatically seed itself with products from FakeStoreAPI on boot!
